@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxxy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Daxxy Store</h1>
+        <div class="products">
+            <!-- Produk pertama -->
+            <div class="product">
+                <h2>Panel Pterodactyl Public 5GB</h2>
+                <p>Harga: Rp 4.000</p>
+                <button class="add-to-cart" data-product="Panel Pterodactyl Public 5GB" data-price="4000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk kedua -->
+            <div class="product">
+                <h2>Panel Unli Public</h2>
+                <p>Harga: Rp 5.000</p>
+                <button class="add-to-cart" data-product="Panel Unli Public" data-price="5000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk ketiga -->
+            <div class="product">
+                <h2>Admin Panel Public</h2>
+                <p>Harga: Rp 8.000</p>
+                <button class="add-to-cart" data-product="Admin Panel Public" data-price="8000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk keempat -->
+            <div class="product">
+                <h2>Reseller Panel</h2>
+                <p>Harga: Rp 9.000</p>
+                <button class="add-to-cart" data-product="Reseller Panel" data-price="9000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk kelima -->
+            <div class="product">
+                <h2>Panel Pterodactyl Private 5GB</h2>
+                <p>Harga: Rp 5.000</p>
+                <button class="add-to-cart" data-product="Panel Pterodactyl Private 5GB" data-price="5000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk keenam -->
+            <div class="product">
+                <h2>Panel Unli Private</h2>
+                <p>Harga: Rp 7.000</p>
+                <button class="add-to-cart" data-product="Panel Unli Private" data-price="7000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk ketujuh -->
+            <div class="product">
+                <h2>Reseller Panel Private</h2>
+                <p>Harga: Rp 11.000</p>
+                <button class="add-to-cart" data-product="Reseller Panel Private" data-price="11000">Tambah ke Keranjang</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Keranjang</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rp <span id="total-price">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <div id="cancel-cart" style="display: none;">
+        <h2>Apakah Anda yakin ingin menghapus barang dari keranjang?</h2>
+        <button id="confirm-cancel">Ya</button>
+        <button id="cancel-cancel">Tidak</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

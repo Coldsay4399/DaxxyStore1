@@ -1,0 +1,130 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-container {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#cart {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#cart ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart ul li span {
+    cursor: pointer;
+}
+
+#cancel-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+}
+
+#cancel-cart button {
+    background-color: #f00;
+}
+
+#star-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2018/04/06/14/01/star-3291492_960_720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    animation: starBackground 30s linear infinite;
+}
+
+@keyframes starBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
